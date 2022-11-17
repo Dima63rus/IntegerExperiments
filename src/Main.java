@@ -11,6 +11,7 @@ public class Main {
         System.out.println("Сумма чисел в переменной  " + container.count_02 + " = " + sumNumber);
         sumNumber = Main.sumDigits(container.count_03);
         System.out.println("Сумма чисел в переменной  " + container.count_03 + " = " + sumNumber);
+        System.out.println("Сумма чисел в переменной дабл  " + container.count_03 + " = " + sumNumber);
     }
 
     public static Integer sumDigits(int ivNumber)
