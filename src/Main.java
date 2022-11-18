@@ -1,10 +1,15 @@
 public class Main {
     public static void main(String[] args) {
         Container container = new Container();
-        container.count_01 = 12345;
-        container.count_02 = 10;
-        container.count_03 = 5059191;
 
+//        Character def
+        System.out.println(container.mvCh + " conv into int " + Main.sumDigits_2(container.mvCh));
+//        Проверка на строчную букву
+        char lvChA = 'A';
+        boolean lvFlag = Character.isLowerCase(lvChA);
+        System.out.println(lvChA + " - строчная? " + lvFlag);
+
+//        Integer/String def
         int sumNumber = Main.sumDigits(container.count_01);
         System.out.println("Сумма чисел в переменной  " + container.count_01 + " = " + sumNumber);
         sumNumber = Main.sumDigits(container.count_02);
@@ -13,6 +18,14 @@ public class Main {
         System.out.println("Сумма чисел в переменной  " + container.count_03 + " = " + sumNumber);
     }
 
+    //    Character imp
+    public static int sumDigits_2(char ivCh) {
+//        conv char -> int
+        return Character.digit(ivCh, 16);
+    }
+
+
+    //    Integer/String imp
     public static Integer sumDigits(int ivNumber)
 //    public Integer sumDigits(Integer number)
     {
